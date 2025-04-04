@@ -3,19 +3,7 @@ pipeline {
   stages {
     stage('Pre-Build') {
       steps {
-        echo 'Pre-build'
-      }
-    }
-
-    stage('Build') {
-      steps {
-        echo 'Build'
-      }
-    }
-
-    stage('Deploy') {
-      steps {
-        echo 'Deploy'
+        git(url: 'https://github.com/susovandas88/TestingPipeline', branch: 'TestingPipeline', credentialsId: 'susovandas88')
       }
     }
 
