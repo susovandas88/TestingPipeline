@@ -2,8 +2,9 @@ pipeline {
   agent any
   stages {
     stage('Pre-Build') {
+      agent any
       steps {
-        git(url: 'https://github.com/susovandas88/TestingPipeline', branch: 'TestingPipeline', credentialsId: 'susovandas88')
+        sh 'npm install'
       }
     }
 
