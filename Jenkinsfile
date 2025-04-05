@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    dockerfile true
+    kubernetes true
   }
   stages {
     stage('Pre-Build') {
