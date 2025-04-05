@@ -1,0 +1,14 @@
+appName: pipeline
+
+port: 80
+
+namespace: default
+
+configmap:
+  name: pipeline-configmap-v1
+  data:
+    CUSTOM_HEADER: 'This app was deployed with helm!'
+
+image:
+  name: susovandas88/testpipeline
+  tag: latest
