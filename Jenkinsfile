@@ -8,9 +8,5 @@ pipeline {
         echo 'Building docker file'
       }
     }
-
-  }
-  environment {
-    Env = 'dev'
   }
 }
