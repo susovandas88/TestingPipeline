@@ -4,7 +4,7 @@ pipeline {
     stage('Pre-Build') {
       agent any
       steps {
-        sh 'npm install'
+        echo 'Build'
       }
     }
 
